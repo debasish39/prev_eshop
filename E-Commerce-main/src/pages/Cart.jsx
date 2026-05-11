@@ -145,7 +145,7 @@ export default function Cart({
 
       const response =
         await axios.post(
-          "http://localhost:8000/api/order",
+          "https://prev-eshop.onrender.com/api/order",
           orderData
         );
 
@@ -187,7 +187,7 @@ export default function Cart({
 
         const { data } =
           await axios.post(
-            "http://localhost:8000/api/payment/create-razorpay-order",
+            "https://prev-eshop.onrender.com/api/payment/create-razorpay-order",
             {
               amount:
                 Number(
@@ -250,7 +250,7 @@ export default function Cart({
 
       const verifyRes =
         await axios.post(
-          "http://localhost:8000/api/payment/verify-payment",
+          "https://prev-eshop.onrender.com/api/payment/verify-payment",
           {
             razorpay_order_id:
               response.razorpay_order_id,

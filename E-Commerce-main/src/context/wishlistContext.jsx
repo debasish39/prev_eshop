@@ -14,7 +14,7 @@ export const WishlistContext =
   createContext();
 
 const API_URL =
-  "http://localhost:8000/api/wishlist";
+  "https://prev-eshop.onrender.com/api/wishlist";
 
 export const WishlistProvider = ({
   children,

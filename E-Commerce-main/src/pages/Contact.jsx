@@ -79,14 +79,14 @@ export default function Contact() {
       } else {
         toast.error(
           <span className="flex items-center gap-2">
-           Something went wrong. Try again.
+            Something went wrong. Try again.
           </span>
         );
       }
     } catch (error) {
       toast.error(
         <span className="flex items-center gap-2">
-         Submission failed. Check your network.
+          Submission failed. Check your network.
         </span>
       );
     } finally {
@@ -103,15 +103,7 @@ export default function Contact() {
           data-aos="fade-right"
           data-aos-delay="200"
         >
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3311.9316664188245!2d85.61682517655123!3d20.13223376978005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a19ad20457753ef%3A0x8d2834dd8305ea76!2sEinstein%20Academy%20of%20Technology%20and%20Management!5e1!3m2!1sen!2sin!4v1761017897848!5m2!1sen!2sin"
-            className="w-full h-full"
-            style={{ border: 0 }}
-            allowFullScreen
-            loading="lazy"
-            referrerPolicy="no-referrer-when-downgrade"
-            title="Google Map"
-          ></iframe>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d169417.42631306895!2d85.5570147889389!3d20.216011177977155!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1skmbb%20college%20of%20engineering%20and%20technology!5e1!3m2!1sen!2sin!4v1778477119063!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
 
         {/* Contact Form on the RIGHT */}
@@ -202,9 +194,8 @@ export default function Contact() {
               <button
                 type="submit"
                 disabled={isSubmitting}
-                className={`${
-                  isSubmitting ? 'opacity-50 cursor-not-allowed' : ''
-                } bg-red-500 text-white px-6 py-2 rounded-md hover:bg-red-600 transition w-full cursor-pointer`}
+                className={`${isSubmitting ? 'opacity-50 cursor-not-allowed' : ''
+                  } bg-red-500 text-white px-6 py-2 rounded-md hover:bg-red-600 transition w-full cursor-pointer`}
               >
                 {isSubmitting ? 'Sending...' : 'Submit Request'}
               </button>
